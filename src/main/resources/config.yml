@@ -21,7 +21,6 @@ allow-reset-password: false
 prompts:
   title: true
   message:
-    only-once: false
     timer-delay(tick): 40
     
 tone: true
