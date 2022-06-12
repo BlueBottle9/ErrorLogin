@@ -79,7 +79,7 @@ default-language: 'zh_cn' #Default language. 默认语言
 
 
 date-format: 'yyyy-MM-dd hh:mm:ss' #Data format template. 日期格式化模板
-
+```
 
 
 
