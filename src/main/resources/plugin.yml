@@ -1,0 +1,9 @@
+name: 'ErrorLogin'
+version: '0.0.1'
+main: bluescreen9.minecraft.bukkit.Main
+description: 'A smiple bukkit login plugin'
+
+commands:
+  login:
+  register:
+  resetpassword:
