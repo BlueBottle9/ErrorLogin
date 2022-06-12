@@ -195,7 +195,9 @@ public class Data {
 			    public static void autoLogin(Player player) {
 			    	logined_players.add(player.getUniqueId());
 							player.sendMessage(MessageUtil.dispose(Main.Language.getLang(player, "prompt.autologin.message"), player));
-					    	player.setAllowFlight(false);
+							if (player.getGameMode().equals(GameMode.SURVIVAL) || player.getGameMode().equals(GameMode.ADVENTURE)) {
+								player.setAllowFlight(false);
+								}
 							if (Main.ErrorLogin.getConfig().getBoolean("prompts.title")) {
 					    		MessageUtil.sendTitle(player, MessageUtil.dispose(Main.Language.getLang(player, "prompt.autologin.title.maintitle"), player),
 					    				MessageUtil.dispose(Main.Language.getLang(player, "prompt.autologin.title.subtitle"), player),
